@@ -23,7 +23,7 @@ namespace VideoMain
             listView1.Visible = false;
             ListViewItem Selected = listView1.Items[listView1.SelectedIndices[0]];
             pictureBox1.Image = imageList1.Images[Selected.ImageIndex];
-            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox2.ImageLocation = Selected.SubItems[0].Text;
             if (pictureBox2.Image == pictureBox2.ErrorImage)
             {

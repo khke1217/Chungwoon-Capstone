@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.ListViewItem listViewItem1 = new System.Windows.Forms.ListViewItem(new string[] {
+            System.Windows.Forms.ListViewItem listViewItem2 = new System.Windows.Forms.ListViewItem(new string[] {
             "제목1",
             "",
             "설명입니다"}, 0);
@@ -44,6 +44,7 @@
             this.listView1 = new System.Windows.Forms.ListView();
             this.TitleName = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.Logo = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.info = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.삭제ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.편집ToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
@@ -56,7 +57,6 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.treeView1 = new System.Windows.Forms.TreeView();
             this.TitleLable = new System.Windows.Forms.Label();
-            this.info = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.menuStrip1.SuspendLayout();
             this.contextMenuStrip1.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -127,7 +127,7 @@
             this.info});
             this.listView1.ContextMenuStrip = this.contextMenuStrip1;
             this.listView1.Items.AddRange(new System.Windows.Forms.ListViewItem[] {
-            listViewItem1});
+            listViewItem2});
             this.listView1.LargeImageList = this.imageList1;
             this.listView1.Location = new System.Drawing.Point(0, 24);
             this.listView1.Margin = new System.Windows.Forms.Padding(0);
@@ -145,6 +145,11 @@
             // Logo
             // 
             this.Logo.Text = "로고";
+            // 
+            // info
+            // 
+            this.info.Text = "설명1";
+            this.info.Width = 81;
             // 
             // contextMenuStrip1
             // 
@@ -253,11 +258,6 @@
             this.TitleLable.Name = "TitleLable";
             this.TitleLable.Size = new System.Drawing.Size(0, 12);
             this.TitleLable.TabIndex = 4;
-            // 
-            // info
-            // 
-            this.info.Text = "설명1";
-            this.info.Width = 81;
             // 
             // UserControl1
             // 
